@@ -1,0 +1,125 @@
+.header {
+    padding: 20px 0px;
+    width: 100%;
+    z-index: 10;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /*работает как margin: 0 auto; для высоты */
+}
+.header__logo img {
+    width: 200px;
+    height: 60px;
+}
+.header__list {
+    display: flex;
+}
+.header__item {
+    list-style-type: none;
+    margin-left: 40px;
+}
+.header__link {
+    font: var(--base-font);
+    color:var(--white)
+}
+.header__item:hover{
+    border-bottom: solid 1px white;
+    color: white;
+}
+.header__navbar.header__navbar_active {
+    right: 0;
+    transition: 0.7s;
+}
+.header__burger {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    z-index: 98;
+}
+.header__burger::after, .header__burger span , .header__burger::before {
+    position: absolute;
+    content: "";
+    left: 3px;
+    width: 45px;
+    height: 3px;
+    background: white;
+    transition: 0.7s;
+    opacity: 1;
+}
+.header__burger::after {
+    top: 13px;
+}
+.header__burger span {
+    top: 23px;
+}
+.header__burger::before {
+    top: 33px;
+}
+.header__burger.header__burger_active {
+    position: fixed;
+    right: 20px;
+}
+.header__burger.header__burger_active::after {
+    top: 23px;
+    transition: 0.7s;
+    transform: rotate(-43deg);
+}
+.header__burger.header__burger_active span {
+    top: 23px;
+    transition: 0.7s;
+    opacity: 0;
+}
+.header__burger.header__burger_active::before {
+    top: 23px;
+    transition: 0.7s;
+    transform: rotate(43deg);
+}
+.header__popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: rgb(43, 42, 42, 0.7);
+    z-index: 80;
+    display: none;
+}
+.header__popup.header__popup_active {
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    .header__navbar {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width: 300px;
+        height: 100%;
+        overflow-y: scroll;
+        z-index: 90;
+        background: var(--green);
+        padding-top: 80px;
+        transition: 0.7s;
+        z-index: 95;
+    }
+    .header__list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header__item {
+        margin-left: 0;
+    }
+    .header__item {
+        padding: 20px;
+    }
+    .header__item:hover {
+        border: solid 1px white;
+    }
+    .header__burger {
+        display: block;
+    }
+}

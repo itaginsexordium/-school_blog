@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #80C8BC;
+    padding: 0;
+	margin: 0;
+	border: 0;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+.container {
+    max-width: 1190px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none; 
+}
+
+/* variablse */
+:root {
+/* псевдоэлемент для создания переменных */
+    --grey:#2d2c2d;
+    --green:#194c41;
+    --red:#e84545;
+    --white:#d3d9d7;
+    --base-font:'Montserrat', sans-serif;
+}
+

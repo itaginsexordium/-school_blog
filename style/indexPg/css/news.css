@@ -1,0 +1,112 @@
+
+.news_content {
+    display: flex;
+    height: 400px;
+}
+.news__left {
+    flex: 50%;
+    width: 50%;
+    overflow: hidden;
+}
+.news__left img {
+    
+}
+.news__right {
+    flex: 50%;
+    background: var(--light-green);
+}
+.news__content {
+    margin: 70px;
+}
+.news__content h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 980px){
+    .news_content {
+        height: 600px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .news__left {
+        flex: 50%;
+        width: 100%;
+
+        overflow: hidden;
+    }
+}
+
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Точки (булиты) */
+
+.news .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+/* Активная точка */
+
+.news .slick-dots li.slick-active button {
+    border: solid 1px rgb(83, 83, 83);
+    background-color: transparent;
+}
+
+/* Элемент точки   */
+
+.news .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 50%
+}
+
+/* Стрелка */
+
+.news .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    
+
+}
+
+/* Стрелка влево */
+
+.news .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../img/icon/arrow_carrot-2left.png') 0 0 / 100% no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+/* Стрелка вправо */
+
+.news .slick-arrow.slick-next {
+    right: 0;
+    background: url('../img/icon/arrow_carrot-2right.png') 0 0 / 100% no-repeat;
+    width: 20px;
+    height: 20px;
+}

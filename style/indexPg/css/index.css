@@ -1,0 +1,11 @@
+/* файл для импортов других css файлов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "./config.css";
+@import "./header.css";
+@import "./page.css";
+@import "./news.css";
+@import "./history.css";
+@import "./teachers.css";
+@import "./footer.css";
+
+

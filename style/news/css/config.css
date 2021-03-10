@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #80C8BC;
+    padding: 0;
+	margin: 0;
+	border: 0;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+.container {
+    max-width: 1190px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+body {
+    position: relative;
+    font-family: 'Old Standard TT';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none; 
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/* variablse */
+:root {
+    /* псевдоэлемент для создания переменных */
+        --grey:#2d2c2d;
+        --green:#40b3a2;
+        --light-green:#80c8bc;
+        --red:#e84545;
+        --white:#d3d9d7;
+        --base-font:'Montserrat', sans-serif;
+    }
+
+/* fonts */
+@font-face {
+    font-family: 'Old Standard TT';
+    src: url('OldStandardTT-Regular.eot');
+    src: local('Old Standard TT Regular'), local('OldStandardTT-Regular'),
+        url('OldStandardTT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('OldStandardTT-Regular.woff2') format('woff2'),
+        url('OldStandardTT-Regular.woff') format('woff'),
+        url('OldStandardTT-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    src: url('OldStandardTT-Italic.eot');
+    src: local('Old Standard TT Italic'), local('OldStandardTT-Italic'),
+        url('OldStandardTT-Italic.eot?#iefix') format('embedded-opentype'),
+        url('OldStandardTT-Italic.woff2') format('woff2'),
+        url('OldStandardTT-Italic.woff') format('woff'),
+        url('OldStandardTT-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    src: url('OldStandardTT-Bold.eot');
+    src: local('Old Standard TT Bold'), local('OldStandardTT-Bold'),
+        url('OldStandardTT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OldStandardTT-Bold.woff2') format('woff2'),
+        url('OldStandardTT-Bold.woff') format('woff'),
+        url('OldStandardTT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
